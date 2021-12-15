@@ -8,6 +8,7 @@ public class HjmWmSystemApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(HjmWmSystemApplication.class, args);
+
     }
 
 }
