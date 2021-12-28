@@ -20,6 +20,7 @@ public class MyUserDetailsService implements UserDetailsService {
     private Logger logger = LoggerFactory.getLogger(getClass());
     @Autowired
     private PasswordEncoder passwordEncoder;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         logger.info( "用户的用户名：{}",username );
