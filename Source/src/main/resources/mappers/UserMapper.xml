@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.juyang.hjm_wmsystem.dao.UserDao">
+    <resultMap id="UserResult" type="com.juyang.hjm_wmsystem.entity.SysUser">
+        <result property="userName" column="id"/>
+        <result property="iphone" column="IPHONE"/>
+        <result property="emailAddress" column="EMAIL_ADDRESS" javaType=""/>
+        <result property="authority" column="AUTHORITY" javaType=""/>
+        <result property="userPassword" column="USER_PASSWORD" javaType=""/>
+        <result property="delFlg" column="DEL_FLG" javaType=""/>
+        <result property="crateId" column="CREATE_ID" javaType=""/>
+        <result property="createDate" column="CREATE_DATE" javaType=""/>
+        <result property="updateId" column="UPDATE_ID" javaType=""/>
+        <result property="updateDate" column="UPDATE_DATE" javaType=""/>
+    </resultMap>
+    <select id="selectUser" resultType="user">
+        select * from user where id = #{id}
+    </select>
+
+</mapper>
